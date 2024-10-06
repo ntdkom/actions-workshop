@@ -34,10 +34,10 @@ jobs:
       if: always()
       with:
         vite-config-path: vite.config.ts
-    package-and-publish:
+    
+  package-and-publish:
     needs:
       - build
-
     name: 🐳 Package & Publish
     runs-on: ubuntu-latest
     permissions:
